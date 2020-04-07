@@ -1,13 +1,116 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    font: 14px "Century Gothic", Futura, sans-serif;
+    margin: 20px;
+    background-color: blueviolet;
+  }
+  
+  ol, ul {
+    padding-left: 30px;
+  }
+
+  .board-row {
+    width: 300px;
+    margin: 0 auto;
+  }  
+
+  .board-row:after {
+    clear: both;
+    content: "";
+    display: table;
+  }
+  
+  .status {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 30px;
+    font-family: monospace;
+  }
+  
+  .square {
+    background: #fff;
+    border: 2px solid #999;
+    float: left;
+    font-size: 70px;
+    font-weight: bold;
+    line-height: 34px;
+    height: 100px;
+    margin-right: -1px;
+    margin-top: -1px;
+    padding: 0;
+    text-align: center;
+    width: 100px;
+  }
+
+  .square:focus {
+    outline: none;
+  }
+  
+  .kbd-navigation .square:focus {
+    background: #ddd;
+  }
+
+  .game-info {
+    margin: 0px auto;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
+  .action-button {
+    margin: 0 7px;
+    font-family: monospace;
+    font-size: 14px;
+    color: #ffffff;
+    padding: 10px 20px;
+    background-color: #3e0573;
+    border-radius: 10px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+  .game-board {
+    margin: 0 auto;
+  }
+
+  .game {
+    width: 40%;
+    margin: 0 auto;
+    background: white;
+    padding: 5%;
+    border-radius: 15px;
+  }
+
+  @media only screen and (max-width: 800px) {
+    .game {
+      width: 90%;
+      margin: 0 auto;
+      background: white;
+      padding: 5%;
+      border-radius: 15px;
+    }
+
+    .board-row {
+      width: 210px;
+      margin: 0 auto;
+    }  
+  
+    .status {
+      margin-bottom: 20px;
+      text-align: center;
+      font-size: 20px;
+      font-family: monospace;
+    }
+
+    .square {
+      background: #fff;
+      border: 2px solid #999;
+      float: left;
+      font-size: 5em;
+      font-weight: bold;
+      line-height: 34px;
+      height: 1em;
+      margin-right: -1px;
+      margin-top: -1px;
+      padding: 0;
+      text-align: center;
+      width: 1em;
+    }
+  }
+  
